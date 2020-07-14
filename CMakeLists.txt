@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(docking-robot)
+project(dockingrobot)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -206,6 +206,6 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-add_executable(docking-robot src/docking.cpp)
-target_link_libraries(docking-robot ${catkin_LIBRARIES})
-add_dependencies(docking-robot docking_generate_messages_cpp)
+add_executable(dockingrobot src/docking.cpp)
+target_link_libraries(dockingrobot ${catkin_LIBRARIES})
+add_dependencies(dockingrobot docking_generate_messages_cpp)
